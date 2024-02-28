@@ -10,7 +10,7 @@ function DontFeatherMeBro_OnLoad(self)
 end
 
 function DontFeatherMeBro_OnEvent(self, event, arg, ...)
-    if event == "UNIT_AURA" then
+    if event == "UNIT_AURA" and arg == "player" then
         if not InCombatLockdown() then
             for i = 1, 40 do
                 local name = UnitBuff("player", i)
