@@ -1,0 +1,11 @@
+<Ui>
+    <Script file="metadata.lua" />
+    <Script file="core.lua" />
+
+    <Frame name="DontFeatherMeBro">
+        <Scripts>
+            <OnLoad function="DontFeatherMeBro_OnLoad" />
+            <OnEvent function="DontFeatherMeBro_OnEvent" />
+        </Scripts>
+    </Frame>
+</Ui>
